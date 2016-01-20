@@ -10,15 +10,15 @@
     angular.module('notesApp', [])
             .controller('MainCtrl', [function(){
                 var self = this;
+                var change = false;
                 self.message = 'Hello ';
-                self.change = false;
                 self.changeMessage = function(){
-                    if (!self.change){
+                    if (!change){
                         self.message = 'Goodbye ';
-                        self.change = true;
+                        change = true;
                     }else{
                         self.message = 'Hello ';
-                        self.change = false;
+                        change = false;
                     }
                 };
             }]);
