@@ -12,7 +12,7 @@ angular.module('fifaApp')
             }
         }
     }])
-    .factory('userService', ['$http', function ($http) {
+    .factory('UserService', ['$http', function ($http) {
         var service = {
             isLoggedIn: false,
             session: function () {
